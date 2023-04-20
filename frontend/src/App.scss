@@ -1,0 +1,27 @@
+@import "./icons";
+
+$header-height: 200px;
+$margin-bottom-footer: 35px;
+$footer-height:125px;
+.App{
+    // min-height: 100vh;
+    min-height: calc(100vh - ($footer-height + $header-height + $margin-bottom-footer));
+   margin-bottom: 23px;
+}
+.loading-icon{
+ transition: all 4s ease-in-out;
+ background-color: white;
+ width: 100vw;
+ height: 500px;
+ animation-duration: 4s;
+ animation-fill-mode: both;
+}
+@keyframes fadeOut {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+.fadeOut {
+  animation-name: fadeOut;
+}
+

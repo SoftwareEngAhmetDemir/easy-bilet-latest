@@ -1,0 +1,21 @@
+.sucess {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        transform: translate(-100px, -50%);
+        height: 350px;
+    }
+}
+@include media-breakpoint-down(md){
+    .sucess {
+    img{
+        transform: translate(0,-50%)
+    }
+    }
+}

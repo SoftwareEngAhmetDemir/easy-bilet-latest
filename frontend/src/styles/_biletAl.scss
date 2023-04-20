@@ -1,0 +1,27 @@
+.biletAl {
+  position: relative;
+  left: 50%;
+  transform-origin: center center;
+  transform: translateX(-20%);
+
+  .form-select,
+  .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+    padding: 10.5px 14px !important;
+    border: 1px solid #76797b33 !important;
+    cursor: pointer;
+  }
+
+  .css-1sumxir-MuiFormLabel-root-MuiInputLabel-root {
+    z-index: 2;
+    background-color: $white;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .biletAl {
+    width: 95%;
+    margin: 0;
+    left: 0%;
+    transform: translateX(2.5%);
+  }
+}
